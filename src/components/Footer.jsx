@@ -1,13 +1,91 @@
-import React from 'react'
+import React from "react";
+import { Facebook, Twitter, Instagram } from "lucide-react";
 
 function Footer() {
   return (
-    <>
-    <div className='flex h-screen'>
-      
-    </div>
-    </>
-  )
+    <footer className="bg-white text-gray-700 pt-10 mt-60 border-t border-gray-300">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
+          <div>
+            <div className="flex items-center mb-4">
+              <img
+                src="/icon.webp"
+                alt=""
+                className="w-10 h-10 sm:w-12 sm:h-12 rounded-full mr-2"
+              />
+              <div className="bg-gradient-to-r from-[#1EAEDB] to-[#4F46E5] bg-clip-text text-transparent text-xl sm:text-[1.5rem] font-extrabold font-playfair">
+                Deep Soul
+              </div>
+            </div>
+            <p className="text-sm mb-4">
+              Your journey to inner peace and mental wellbeing starts here.
+            </p>
+
+            {/* Social Icons */}
+            <div className="flex space-x-4">
+              <Facebook className="w-5 h-5 cursor-pointer hover:text-blue-600" />
+              <Twitter className="w-5 h-5 cursor-pointer hover:text-blue-400" />
+              <Instagram className="w-5 h-5 cursor-pointer hover:text-pink-500" />
+            </div>
+          </div>
+
+          {/* Features */}
+          <div>
+            <h2 className="text-md font-semibold mb-4">Features</h2>
+            <ul className="space-y-2 text-sm">
+              <li>Therapy Booking</li>
+              <li>Self-Help Exercises</li>
+              <li>Therapist Buddy</li>
+              <li>Community Support</li>
+              <li>Wellness Resources</li>
+            </ul>
+          </div>
+
+          {/* Resources */}
+          <div>
+            <h2 className="text-md font-semibold mb-4">
+              Resources
+            </h2>
+            <ul className="space-y-2 text-sm">
+              <li>Articles</li>
+              <li>Blogs</li>
+              <li>Podcasts</li>
+              <li>Audiobooks</li>
+              <li>Research</li>
+            </ul>
+          </div>
+
+          {/* Company */}
+          <div>
+            <h2 className="text-md font-semibold mb-4">Company</h2>
+            <ul className="space-y-2 text-sm">
+              <li>About Us</li>
+              <li>Our Team</li>
+              <li>Careers</li>
+              <li>Contact</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div className="border-t border-gray-200 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+          <p>© 2025 DeepSoul. All rights reserved.</p>
+          <div className="flex space-x-4 mt-4 md:mt-0">
+            <a href="#" className="hover:underline">
+              Terms of Service
+            </a>
+            <a href="#" className="hover:underline">
+              Privacy Policy
+            </a>
+            <a href="#" className="hover:underline">
+              Cookie Policy
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

@@ -22,10 +22,10 @@ function Therapy() {
                         </div>
                         <div className="pt-10">
                             {TherapyList.map((therapy, index) => (
-                                <div className="flex items-center gap-3">
-                                    <div>{therapy.icon}</div>
+                                <div className="flex items-center gap-5">
+                                    <div className="text-blue-300 bg-[#F2FCE2] rounded-full w-10 h-10 p-2">{therapy.icon}</div>
                                     <div>
-                                        <div>{therapy.title}</div>
+                                        <div className="font-semibold text-xl">{therapy.title}</div>
                                         <div>{therapy.description}</div>
                                     </div>
                                 </div>
