@@ -1,16 +1,21 @@
 import React, { useState } from "react";
-import { X, AlignJustify } from "lucide-react";
+import { X, AlignJustify,Sun,Moon } from "lucide-react";
 
 function Navbar() {
     const [sidebarOpen, setSidebarOpen] = useState(false);
+    const [isDarkMode , setIsDarkMode]=useState(false);
 
     function SidebarHandler() {
         setSidebarOpen(!sidebarOpen);
     }
 
+    function isDarkModeHandler(){
+        setIsDarkMode(!isDarkMode)
+
+    }
     return (
         <>
-            <div className="flex justify-between items-center px-8 sm:px-20 py-4 border-b border-gray-200 fixed w-full z-50 top-0 left-0 bg-transparent backdrop-blur-md">
+            <div className="flex justify-between items-center px-8 sm:px-20 py-4 border-b border-gray-200 fixed w-full z-50 top-0 left-0 bg-transparent backdrop-blur-md dark:bg-gray-700">
                 <div className="flex items-center gap-2">
                     <img
                         src="/icon.webp"
@@ -37,6 +42,12 @@ function Navbar() {
                     </div>
                     <div className="hover:text-[#1EAEDB] cursor-pointer">
                         Resources
+                    </div>
+                    <div className="" onClick={isDarkModeHandler}>
+                        {
+                            isDarkMode ? <Sun/> : <Moon/>
+                            
+                        }
                     </div>
                 </div>
 
