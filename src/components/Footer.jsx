@@ -1,9 +1,10 @@
+//footer
 import React from "react";
 import { Facebook, Twitter, Instagram } from "lucide-react";
 
 function Footer() {
     return (
-        <footer className="bg-white text-gray-700 pt-10 mt-40 sm:mt-60 border-t border-gray-300">
+        <footer className=" text-gray-700 dark:text-white pt-10 border-t border-gray-300 pb-5">
             <div className="max-w-7xl mx-auto px-6 sm:px-8 md:px-16">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
                     <div>
@@ -68,7 +69,7 @@ function Footer() {
                     </div>
                 </div>
 
-                <div className="border-t border-gray-200 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-xs sm:text-sm text-gray-500">
+                <div className="border-t border-gray-200 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-xs sm:text-sm text-gray-500 dark:text-white">
                     <p>© 2025 DeepSoul. All rights reserved.</p>
                     <div className="flex space-x-4 mt-4 md:mt-0">
                         <a href="#" className="hover:underline">

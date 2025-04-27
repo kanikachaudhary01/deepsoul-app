@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+//navbar
+import React, { useState, useEffect } from "react";
 import { X, AlignJustify,Sun,Moon } from "lucide-react";
 
 function Navbar() {
@@ -11,8 +12,17 @@ function Navbar() {
 
     function isDarkModeHandler(){
         setIsDarkMode(!isDarkMode)
-
     }
+
+    useEffect(() => {
+        const root = window.document.documentElement;
+        if (isDarkMode) {
+          root.classList.add("dark");
+        } else {
+          root.classList.remove("dark");
+        }
+      }, [isDarkMode]);
+
     return (
         <>
             <div className="flex justify-between items-center px-8 sm:px-20 py-4 border-b border-gray-200 fixed w-full z-50 top-0 left-0 bg-transparent backdrop-blur-md dark:bg-gray-700">
@@ -27,7 +37,7 @@ function Navbar() {
                     </div>
                 </div>
 
-                <div className="gap-6 text-gray-500 font-medium hidden sm:flex">
+                <div className="gap-6 text-gray-500 dark:text-white font-medium hidden sm:flex">
                     <div className="hover:text-[#1EAEDB] cursor-pointer">
                         Features
                     </div>

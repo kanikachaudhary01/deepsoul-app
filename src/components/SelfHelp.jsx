@@ -4,9 +4,9 @@ import { Activity, Book, Timer, Play } from "lucide-react";
 
 function SelfHelp() {
     return (
-        <div className="mt-24 sm:mt-32 md:mt-40 pt-10 sm:pt-16 md:pt-20 bg-gradient-to-b from-[#F2FCE2] to-white pb-14">
+        <div className="mt-24 sm:mt-32 md:mt-40 pt-10 sm:pt-16 md:pt-20 bg-gradient-to-b from-[#F2FCE2] to-white dark:from-[#005974] dark:to-[#0800a9] pb-14">
             <div className="max-w-7xl mx-auto px-4 sm:px-8 md:px-12 lg:px-20">
-                <div className="flex flex-col items-center justify-center mb-14 md:mb-20">
+                <div className="flex flex-col items-center justify-center pb-14 md:pb-20">
                     <button className="text-[#4F46E5] bg-[#E5DEFF] rounded-full px-5 py-2 text-sm sm:text-base">
                         Daily Practice
                     </button>
@@ -22,11 +22,11 @@ function SelfHelp() {
 
                 <div className="flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-20">
 
-  <div className="shadow-lg px-6 sm:px-8 md:px-10 rounded-2xl bg-white py-8 sm:py-10 md:w-full lg:w-[60%]">
+  <div className="shadow-lg px-6 sm:px-8 md:px-10 rounded-2xl dark:bg-gray-800 py-8 sm:py-10 md:w-full lg:w-[60%]">
     <h3 className="text-xl sm:text-2xl font-semibold pb-6 sm:pb-10">
       Featured Exercises
     </h3>
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1  gap-4 sm:gap-6">
       <SelfBox bgColor="bg-violet-400" icon={<Activity />} heading="Guided Meditation" subheading="10 min" />
       <SelfBox bgColor="bg-green-400" icon={<Timer />} heading="Mindful Journaling" subheading="10 min" />
       <SelfBox bgColor="bg-yellow-400" icon={<Book />} heading="Breathing Exercise" subheading="10 min" />
@@ -46,8 +46,8 @@ function SelfHelp() {
     </div>
   </div>
 
-  <div className="flex flex-col gap-6 md:gap-8 md:w-full lg:w-[40%]">
-    <div className="bg-gradient-to-r from-[#FFDEE2] to-[#E5DEFF] rounded-2xl px-6 sm:px-10 py-8">
+  <div className="flex flex-col gap-6 md:gap-8 md:w-full lg:w-[40%] ">
+    <div className="bg-gradient-to-r from-[#FFDEE2] to-[#E5DEFF] dark:from-gray-800  dark:to-gray-800 rounded-2xl px-6 sm:px-10 py-8 ">
       <h3 className="font-semibold text-2xl sm:text-3xl mb-2">
         Personalized For You
       </h3>
@@ -56,7 +56,7 @@ function SelfHelp() {
       </p>
     </div>
 
-    <div className="shadow-lg rounded-2xl bg-white px-6 sm:px-10 py-8">
+    <div className="shadow-lg rounded-2xl dark:bg-gray-800 px-6 sm:px-10 py-8">
       <h3 className="font-semibold text-2xl sm:text-3xl mb-2">
         Track Your Mood
       </h3>

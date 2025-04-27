@@ -1,10 +1,11 @@
+
 import React from "react";
 import TherapyList from "./TherapyList";
 import TherapyBoxes from "./TherapyBoxes";
 
 function Therapy() {
     return (
-        <div className="py-20 sm:py-24 md:py-32 px-4 sm:px-8 md:px-16 lg:px-20 bg-white">
+        <div className="py-20 sm:py-24 md:py-32 px-4 sm:px-8 md:px-16 lg:px-20 ">
             <div className="flex justify-center sm:justify-start">
                 <button className="text-[#4F46E5] bg-[#E5DEFF] rounded-full w-fit px-4 py-2 text-sm sm:text-base">
                     Professional Support
@@ -43,11 +44,11 @@ function Therapy() {
                 </div>
 
                 <div className="flex-1">
-                    <div className="bg-gradient-to-r from-[#F2FCE2] to-[#E5DEFF] rounded-2xl px-6 sm:px-10 py-8 text-center">
+                <div className="bg-gradient-to-r from-[#F2FCE2] to-[#E5DEFF] dark:from-[#1EAEDB] dark:to-[#4F46E5] rounded-2xl px-6 sm:px-10 py-8 text-center">
                         <h3 className="font-playfair font-bold text-2xl">
                             Our Therapists
                         </h3>
-                        <p className="text-gray-500 text-base sm:text-lg font-light mt-2">
+                        <p className="text-gray-500 dark:text-white text-base sm:text-lg font-light mt-2">
                             Our network includes hundreds of licensed
                             professionals ready to support you.
                         </p>

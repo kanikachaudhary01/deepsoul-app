@@ -1,3 +1,4 @@
+
 import React from "react";
 import Features from "../components/Features";
 import Footer from "../components/Footer";
@@ -8,14 +9,14 @@ import Therapy from "../components/Therapy";
 
 function Home() {
     return (
-        <>
+        <div className="dark:bg-gray-700 dark:text-white">
             <Navbar />
             <Hero />
             <Features />
             <Therapy />
             <SelfHelp />
             <Footer />
-        </>
+        </div>
     );
 }
 
